@@ -4,16 +4,10 @@ import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import MainPage from './Main/MainPage';
-
+import App from './App';
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact={true} component={MainPage} />
-      </Switch>
-    </BrowserRouter>
+    <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );

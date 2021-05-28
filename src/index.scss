@@ -15,3 +15,11 @@ $size-menu-closed: 52px;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main {
+  margin-left: $size-menu-open;
+
+  &.collapsed {
+      margin-left: $size-menu-closed;
+  }
+}
