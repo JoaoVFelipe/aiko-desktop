@@ -1,0 +1,9 @@
+@import "../index.scss";
+
+.main {
+    margin-left: $size-menu-open;
+
+    &.collapsed {
+        margin-left: $size-menu-closed;
+    }
+}
