@@ -1,0 +1,36 @@
+.text-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.text-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.text-row {
+    .col-md-10 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-md-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.chat-textarea {
+    resize: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.chat-sendbutton {
+    
+}
