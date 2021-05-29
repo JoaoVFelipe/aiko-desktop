@@ -1,9 +1,11 @@
 @import "../index.scss";
 
 .main-content-row {
-    width: 100%;
+    width: calc(100% - $size-menu-closed);
 
     &.collapsed {
-        width: calc(100% - 256px);
+        display: flex;
+        flex-direction: row;
+        width: calc(100% - $size-menu-open);
     }
 }
