@@ -1,0 +1,32 @@
+.chat-container {
+    border: 1px solid black;
+    position: absolute;
+    height: 90%;
+    min-height: 90%;
+    width: 45%;
+    min-width: 400px;
+    display: flex;
+}
+
+.chat-historic {
+    border: 1px solid black;
+    width: 50%;
+}
+
+.chat-animation-textbox-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.chat-animation {
+    border: 1px solid black;
+    width: 100%;
+    height: 80%;
+}
+
+.chat-textbox {
+    border: 1px solid black;
+    height: 20%;
+}

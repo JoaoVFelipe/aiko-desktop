@@ -1,19 +1,24 @@
 import React from 'react';
-import { RiLayoutGridFill, RiMenuLine, RiSettings5Line } from 'react-icons/ri'
+import { RiChat1Line, RiComputerLine, RiMenuLine, RiSettings5Line } from 'react-icons/ri'
 import './SideMenu.scss'
 
 
 const SideMenu = (props) => {
     return (
-        <div className={props.menuCollapsed ? "sidebar" : "sidebar collapsed"}>
+        <div className={props.menuOpen ? "sidebar not-collapsed" : "sidebar collapsed"}>
             <div className="sidebar-header">
                 <RiMenuLine className="sidebar-icon" onClick={props.sidenavToggle}></RiMenuLine>
-                <label className="sidebar-logo">LOGO</label>
+                <label className="sidebar-logo">Assistente AIKO</label>
             </div>
             <div className="sidebar-items">
                 <div className="item">
-                    <RiLayoutGridFill className="sidebar-icon"></RiLayoutGridFill>
-                    <label className="sidebar-text">Dashboard</label>
+                    <RiChat1Line className="sidebar-icon"></RiChat1Line>
+                    <label className="sidebar-text">Sua Assistente</label>
+                </div>
+
+                <div className="item">
+                    <RiComputerLine className="sidebar-icon"></RiComputerLine>
+                    <label className="sidebar-text">Seus dispositivos</label>
                 </div>
 
                 <div className="item">

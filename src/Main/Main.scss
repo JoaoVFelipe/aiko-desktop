@@ -1,0 +1,9 @@
+@import "../index.scss";
+
+.main-content-row {
+    width: 100%;
+
+    &.collapsed {
+        width: calc(100% - 256px);
+    }
+}

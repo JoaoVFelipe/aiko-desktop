@@ -17,9 +17,37 @@ $size-menu-closed: 52px;
 }
 
 .main {
-  margin-left: $size-menu-open;
+  padding: 10px 25px;
 
   &.collapsed {
-      margin-left: $size-menu-closed;
+    @keyframes openMenuMainContainer {
+      from {
+        margin-left: $size-menu-closed;
+      }
+      to { 
+        margin-left: $size-menu-open;
+      }
+   }
+  
+    animation-name: openMenuMainContainer;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+  }
+  
+  &.not-collapsed {
+    @keyframes closeMenuMainContainer {
+      from {
+        margin-left: $size-menu-open;
+      }
+      to { 
+        margin-left: $size-menu-closed;
+      }
+   }
+ 
+   animation-name: closeMenuMainContainer;
+   animation-fill-mode: forwards;
+   animation-duration: 0.5s;
+
+     
   }
 }

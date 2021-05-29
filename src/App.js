@@ -5,19 +5,19 @@ import MainPage from './Main/MainPage';
 
 
 const App = () => {
-    const [menuCollapsed, setMenuCollapsed] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const sidenavToggle = () => {
-        setMenuCollapsed(!menuCollapsed);
+        setMenuOpen(!menuOpen);
     };
 
     return (
         <div>
-            <SideMenu sidenavToggle={sidenavToggle} menuCollapsed={menuCollapsed}></SideMenu>
-            <div className={menuCollapsed ? 'main' : 'main collapsed'}>
+            <SideMenu sidenavToggle={sidenavToggle} menuOpen={menuOpen}></SideMenu>
+            <div className={menuOpen ? 'main collapsed' : 'main not-collapsed'}>
                 <BrowserRouter>
                     <Switch>
-                        <Route path="/" exact={true} component={MainPage} />
+                        <Route path="/" exact={true} component={() => <MainPage menuOpen={menuOpen} />} />
                     </Switch>
                 </BrowserRouter>
             </div>
