@@ -2,8 +2,6 @@
 $size-menu-open: 200px;
 $size-menu-closed: 52px;
 
-$breakpoint-tablet: 600pc;
-
 .body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -49,7 +47,5 @@ $breakpoint-tablet: 600pc;
    animation-name: closeMenuMainContainer;
    animation-fill-mode: forwards;
    animation-duration: 0.5s;
-
-     
   }
 }
